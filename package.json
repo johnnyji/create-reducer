@@ -11,6 +11,8 @@
   "keywords": [
     "redux",
     "reducer",
+    "immutablejs",
+    "immutable",
     "functional",
     "store",
     "flux"
