@@ -37,6 +37,7 @@ In your reducer, must provide a `name` and `handlers` key. An action handler can
 
 ```javascript
 // src/reducers/AuthReducer.js
+
 import createReducer from 'create-reducer';
 
 // Always provide an initial state to begin with
@@ -62,7 +63,7 @@ export default createReducer(initialState, {
   // Action handlers receive the current state and the `data` key from the action fired
   // as arguments. You must return a new (altered or unaltered) state from each action creator
   onLogin(state, data) {
-    return {...state, data.currentUser};
+    return {...state, currentUser: data.currentUser};
   },
   
   // Here is an example of an action handler listening to multiple actions
