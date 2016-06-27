@@ -1,6 +1,6 @@
 {
-  "name": "create-reducer",
-  "version": "1.0.0",
+  "name": "create-reducer-redux",
+  "version": "1.0.1",
   "description": "A clean and functional way to create Redux reducers",
   "main": "./lib/index.js",
   "scripts": {

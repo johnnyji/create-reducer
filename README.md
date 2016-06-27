@@ -1,10 +1,10 @@
-# createReducer
+# create-reducer-redux
 
 Create simple and functional reducers that can listen to multiple action creators.
 
 ### Installation
 
-`npm i -S createReducer`
+`npm i -S create-reducer-redux`
 
 ### Usage
 
@@ -38,7 +38,7 @@ In your reducer, must provide a `name` and `handlers` key. An action handler can
 ```javascript
 // src/reducers/AuthReducer.js
 
-import createReducer from 'create-reducer';
+import createReducer from 'create-reducer-redux';
 
 // Always provide an initial state to begin with
 const initialState = {
@@ -75,7 +75,7 @@ export default createReducer(initialState, {
 ```
 ### Immutable.js
 
-I highly recommend pairing `createReducer` with Immutable.js. Immtuable.js provides immutable datatypes to ensure that
+I highly recommend pairing `create-reducer-redux` with Immutable.js. Immtuable.js provides immutable datatypes to ensure that
 actions handlers don't cause side effects.
 
 The usage is indentical:
@@ -83,7 +83,7 @@ The usage is indentical:
 ```javascript
 // Immutable.js Example
 
-import createReducer from 'create-reducer';
+import createReducer from 'create-reducer-redux';
 import Immutable from 'immutable';
 
 // Always provide an initial state to begin with
