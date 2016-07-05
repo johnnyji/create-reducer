@@ -18,11 +18,11 @@ export default function(initialState, opts) {
   const reducerTitle = name ? `the ${name} reducer` : 'your reducer';
   
   if (name == null) {
-    console.error('One of your reducers is missing a `name` property in its object definition.');
+    console.warn('One of your reducers is missing a `name` property in its object definition.');
   }
 
   if (handlers == null) {
-    console.error(`The 'handlers' key must be present in ${reducerTitle} to listen to action types`);
+    console.warn(`The 'handlers' key must be present in ${reducerTitle} to listen to action types`);
     handlers = [];
   }
 
@@ -50,7 +50,7 @@ export default function(initialState, opts) {
         // If the action handler function cannot be found on the reducer object definition,
         // we return the state as/is and issue a console error to the developer
         if (typeof opts[actionHandler] !== 'function') {
-          console.error(`The '${actionHandler}' handler function doesn't exist on ${reducerTitle}.`);
+          console.warn(`The '${actionHandler}' handler function doesn't exist on ${reducerTitle}.`);
           return currentState;
         }
 
