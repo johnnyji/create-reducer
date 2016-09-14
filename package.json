@@ -6,10 +6,10 @@
   "scripts": {
     "test": "mocha test/test.js",
     "test-debug": "node-debug _mocha test/test.js --no-timeouts && open http://127.0.0.1:8080/?port=5858",
-    "transpile": "babel ./src --watch --presets es2015,stage-0 --plugins add-module-exports --out-dir ./lib",
-    "release-patch": "npm version patch -m \"Upgrade to %s\" && npm run transpile",
-    "release-minor": "npm version minor -m \"Upgrade to %s\" && npm run transpile",
-    "release-major": "npm version major -m \"Upgrade to %s\" && npm run transpile"
+    "transpile": "babel ./src --presets es2015,stage-0 --plugins add-module-exports --out-dir ./lib",
+    "release-patch": "npm version patch -m \"Upgrade to %s\" && npm run transpile && npm publish",
+    "release-minor": "npm version minor -m \"Upgrade to %s\" && npm run transpile && npm publish",
+    "release-major": "npm version major -m \"Upgrade to %s\" && npm run transpile && npm publish"
   },
   "keywords": [
     "redux",
