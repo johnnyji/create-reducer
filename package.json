@@ -1,6 +1,6 @@
 {
   "name": "create-reducer-redux",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A clean and functional way to create Redux reducers",
   "main": "./lib/index.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "release-patch": "npm version patch -m \"Upgrade to %s\" && npm run transpile",
     "release-minor": "npm version minor -m \"Upgrade to %s\" && npm run transpile",
     "release-major": "npm version major -m \"Upgrade to %s\" && npm run transpile"
-	},
+  },
   "keywords": [
     "redux",
     "reducer",
