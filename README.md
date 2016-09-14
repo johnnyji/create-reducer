@@ -38,6 +38,7 @@ In your reducer, must provide a `name` and `handlers` key. An action handler can
 ```javascript
 // src/reducers/AuthReducer.js
 
+// Alternate import: `import {createReducer} from 'create-reducer-redux;`
 import createReducer from 'create-reducer-redux';
 
 // Always provide an initial state to begin with
@@ -122,4 +123,24 @@ export default createReducer(initialState, {
 });
 ```
 
-#### Happy Reducing!
+#### `createConstants`
+
+`create-redux-reducer` also provides a convenient way for you to create clean and legible action type constants:
+
+```javascript
+import {createConstants} from 'create-redux-reducer';
+
+const actionTypes = createConstants([
+	'HELLO',
+	'THERE',
+	'WORLD'
+]);
+
+// This will become:
+
+// const actionTypes = {
+// 	'HELLO': 'HELLO',
+// 	'THERE': 'THERE',
+// 	'WORLD': 'WORLD'
+// };
+```
