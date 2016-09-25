@@ -2,6 +2,11 @@
 
 Create simple and functional reducers that can listen to multiple action creators.
 
+### DEPRECATED:
+
+Please do not use this library, it has been deprecated and will no longer
+receive support or bug fixes
+
 ### Installation
 
 `npm i -S create-reducer-redux`
